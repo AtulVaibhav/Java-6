@@ -95,9 +95,9 @@ class StudentUtil {
 		try {
 			System.out.println("Enter the id of student");
 			int id = sc.nextInt();
-			System.out.println("Enter the id of student");
+			System.out.println("Enter the fee of student");
 			String fee = sc.next();
-			String sql = "update student_info set fee=? where id=?";
+			String sql = "update student_data set fee=? where id=?";
 			PreparedStatement ps = ConnectionUtil.getConnection().prepareStatement(sql);
 			ps.setString(1, fee);
 			ps.setInt(2, id);
@@ -116,7 +116,7 @@ class StudentUtil {
 		try {
 			System.out.println("Enter the id of student");
 			int id = sc.nextInt();
-			String sql = "delete from student_info where id=?";
+			String sql = "delete from student_data where id=?";
 			PreparedStatement ps = ConnectionUtil.getConnection().prepareStatement(sql);
 			ps.setInt(1, id);
 			int i = ps.executeUpdate();
