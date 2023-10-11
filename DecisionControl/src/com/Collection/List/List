@@ -1,0 +1,12 @@
+List:
+ -Ordered collection
+ -extends Collection interface
+ -duplicate
+ -it allows indexing
+ 
+Classes that implements List:
+1.ArrayList:Dynamic in nature:non-synchronized.not thread-safe:
+   
+2.LinkedList :double linked list
+3.Vector(legacy class):Dynamic in nature;synchronized: thread-safe
+4.Stack
