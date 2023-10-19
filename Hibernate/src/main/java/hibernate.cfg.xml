@@ -14,7 +14,12 @@
     <property name="show_sql">true</property>
     <property name="format_sql">true</property>
     <property name="hbm2ddl.auto">update</property>
-    <mapping class="com.hibernate.Employee"/>
+    <!--  <mapping class="com.hibernate.Employee"/> 
+    <mapping class="com.aggregation.Student"/>
+    <mapping class="com.aggregation.Address"/>
+    <mapping class="com.collection.User"/> -->
+    <mapping class="com.one_to_one.Consumer"/>
+    <mapping class="com.one_to_one.Vehicle"/>
     
     
     </session-factory>
