@@ -19,9 +19,11 @@
     <mapping class="com.aggregation.Address"/>
     <mapping class="com.collection.User"/> 
     <mapping class="com.one_to_one.Consumer"/>
-    <mapping class="com.one_to_one.Vehicle"/>-->
+    <mapping class="com.one_to_one.Vehicle"/>
     <mapping class="com.one_to_many.Candidate"/>
-    <mapping class="com.one_to_many.Course"/>
+    <mapping class="com.one_to_many.Course"/>-->
+    <mapping class="ManyToMany.Student"/>
+    <mapping class="ManyToMany.Subject"/>
     
     
     </session-factory>
