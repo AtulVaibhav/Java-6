@@ -18,7 +18,7 @@ public class Course {
     
     @ManyToOne
     @JoinColumn(name="user_id")
-    private Candidate candidate;
+    private Candidate candidate;// primaryKey: 
 
 	public Course() {
 		super();

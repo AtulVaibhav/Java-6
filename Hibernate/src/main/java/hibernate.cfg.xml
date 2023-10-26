@@ -21,9 +21,10 @@
     <mapping class="com.one_to_one.Consumer"/>
     <mapping class="com.one_to_one.Vehicle"/>
     <mapping class="com.one_to_many.Candidate"/>
-    <mapping class="com.one_to_many.Course"/>-->
+    <mapping class="com.one_to_many.Course"/>
     <mapping class="ManyToMany.Student"/>
-    <mapping class="ManyToMany.Subject"/>
+    <mapping class="ManyToMany.Subject"/>-->
+    <mapping class="com.HQL.EmployeeInfo"/>
     
     
     </session-factory>
