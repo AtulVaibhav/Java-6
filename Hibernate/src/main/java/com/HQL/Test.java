@@ -124,6 +124,8 @@ public class Test {
      List<Integer> avgSalary = query.list();
      System.out.println(avgSalary.get(0));
      
+   
+     
      
      
      
