@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  <bean id="permAddr" class="com.javaLearning.SpringCore.DI_4.Address">
+    <constructor-arg name="city" value="Bangalore"/>
+    <constructor-arg name="state" value="Karnatak"/>
+  </bean> 
+  
+  <bean id="corresAddr" class="com.javaLearning.SpringCore.DI_4.Address">
+    <constructor-arg name="city" value="Bhopal"/>
+    <constructor-arg name="state" value="Madhya Pradesh"/>
+  </bean> 
+  
+  
+  
+  <bean id="user" class="com.javaLearning.SpringCore.DI_4.User">
+    <constructor-arg name="userId" value="101"/>
+    <constructor-arg name="userName" value="Arjun"/>
+    <constructor-arg name="addr">
+       <list>
+         <ref bean="permAddr"/>
+         <ref bean="corresAddr"/>
+       </list>
+    
+    </constructor-arg>
+  </bean>
+</beans>

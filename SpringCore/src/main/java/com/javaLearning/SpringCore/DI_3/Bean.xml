@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+   
+  <bean id="user" class="com.javaLearning.SpringCore.DI_3.User">
+    <constructor-arg name="userId" value="101"/>
+    <constructor-arg name="userName" value="Arjun"/>
+    <constructor-arg name="contacts">
+       <list>
+         <value>45678976</value>
+         <value>34567897</value>
+         <value>45678976</value>
+         <value>34567897</value>
+       </list>
+    </constructor-arg>
+  </bean>
+</beans>
