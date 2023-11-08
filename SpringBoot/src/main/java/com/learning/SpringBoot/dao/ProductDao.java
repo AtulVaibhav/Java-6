@@ -37,7 +37,22 @@ public class ProductDao {
     }
     
     //updateProducts
-    
+    public Product updateProduct(int productId, Product product){
+    	Product savedProduct = list.stream()
+	       .filter(obj->obj.getProductId()==productId)
+	       .findFirst().get();
+    	
+    	if(savedProduct!=null){
+    		savedProduct.setProductId(product.getProductId());
+    		savedProduct.setProductName(product.getProductName());
+    		savedProduct.setProductDesciption(product.getProductDesciption());
+    		savedProduct.setProductPrice(product.getProductPrice());
+    		
+    		list.add(savedProduct);
+    		return savedProduct;
+    	}
+    	return null;
+    }
     
     //deleteProducts
     public String deleteProductByid(int productId){
