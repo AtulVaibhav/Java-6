@@ -12,6 +12,7 @@ public class App
     public static void main( String[] args )
     {
         AbstractApplicationContext context = new ClassPathXmlApplicationContext("com/javaLearning/SpringCore/BeanCreation/Bean.xml");
-        context.getBean("box2",Box2.class);
+         Box2 bean = (Box2)context.getBean("box2");
+         context.getBean("box2",Box2.class);
     }
 }

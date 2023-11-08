@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+   <!--byName : id of bean must matches with propertyName  -->
+   <bean id="address" class="com.javaLearning.SpringCore.autowiring.byName.Address">
+     <property name="city" value="GandhiNagar"/>
+     <property name="state" value="Gujarat"/>
+     <property name="country" value="India"/>
+   </bean>
+   
+   <bean id="emp" class="com.javaLearning.SpringCore.autowiring.byName.Employee" autowire="byName">
+     <property name="empId" value="101"/>
+     <property name="empName" value="Aayush"/>
+   </bean>
+   
+    
+</beans>
