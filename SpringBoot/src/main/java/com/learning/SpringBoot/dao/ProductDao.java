@@ -43,7 +43,7 @@ public class ProductDao {
 	       .findFirst().get();
     	
     	if(savedProduct!=null){
-    		savedProduct.setProductId(product.getProductId());
+    		
     		savedProduct.setProductName(product.getProductName());
     		savedProduct.setProductDesciption(product.getProductDesciption());
     		savedProduct.setProductPrice(product.getProductPrice());
